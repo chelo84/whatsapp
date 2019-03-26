@@ -10,6 +10,7 @@ public class Whatsapp extends JFrame {
 
     public Whatsapp() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setPreferredSize(new Dimension(500, 500));
         this.paintComponents(this.getContentPane());
 
         this.pack();
@@ -23,10 +24,14 @@ public class Whatsapp extends JFrame {
         JPanel userList = new JPanel();
         userList.setLayout(new BoxLayout(userList, BoxLayout.Y_AXIS));
 
-        JPanel userPanel = new UserPanel();
+        UserPanel userPanel = new UserPanel();
         userPanel.setLayout(new BorderLayout());
-        userPanel.setAvatar()
-        userPanel.add()
-        userList.add()
+//        userPanel.setAvatar());
+        userPanel.setPhoneNumber("+55 489944-7788");
+        userPanel.setNickname("Nickname");
+        userList.add(userPanel);
+
+        panel.add(userList);
+        container.add(panel);
     }
 }
