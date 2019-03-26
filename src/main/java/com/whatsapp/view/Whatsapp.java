@@ -24,14 +24,29 @@ public class Whatsapp extends JFrame {
         JPanel userList = new JPanel();
         userList.setLayout(new BoxLayout(userList, BoxLayout.Y_AXIS));
 
+        for(int i = 0; i < 10; i++) {
+            UserPanel userPanel = new UserPanel();
+//          userPanel.setAvatar());
+            userPanel.setPhoneNumber("+55 489944-7788");
+            userPanel.setNickname("Nickname");
+            userList.add(userPanel);
+        }
+        panel.add(userList, BorderLayout.WEST);
+
+        JPanel userInfoPanel = new JPanel();
         UserPanel userPanel = new UserPanel();
-        userPanel.setLayout(new BorderLayout());
-//        userPanel.setAvatar());
+//        userPanel.setAvatar();
         userPanel.setPhoneNumber("+55 489944-7788");
         userPanel.setNickname("Nickname");
-        userList.add(userPanel);
+        userInfoPanel.add(userPanel, BorderLayout.WEST);
 
-        panel.add(userList);
+        JPanel p = new JPanel();
+        p.add(new JButton("1"));
+        p.add(new JButton("2"));
+        userInfoPanel.add(p, BorderLayout.EAST);
+
+        panel.add(userInfoPanel, BorderLayout.NORTH);
+
         container.add(panel);
     }
 }
