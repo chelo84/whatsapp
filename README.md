@@ -7,7 +7,7 @@
 
 ![](../header.png)
 
-## Instala��o
+## Instalação
 
 ### Detalhes Técnicos
 #### Desenvolvido utilizando as seguintes principais tecnologias
@@ -28,7 +28,7 @@
 
 ### Netbeans
 
-* Faça um clone do reposit�rio com o comando `git clone https://github.com/chelo84/remote-ok-desktop.git` 
+* Faça um clone do reposit�rio com o comando `git clone https://github.com/chelo84/whatsapp.git` 
  na pasta que desejar;
 * Abra o projeto na IDE em Arquivo -> Abrir projeto... -> remote-ok-desktop -> Abrir projeto;
 * Baixe as dependências do projeto pelo maven;
@@ -39,7 +39,7 @@
 ```sh
 André Rosas Agostinho
 Marcelo Ricardo Lacroix
-Marco Aur�lio Floriani
+Marco Aurélio Floriani
 ```
 
 
