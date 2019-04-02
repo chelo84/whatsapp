@@ -20,6 +20,7 @@ public class Whatsapp extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setPreferredSize(new Dimension(850, 850));
         this.paintComponents(this.getContentPane());
+        this.setIconImage(ImageIO.read(new File("imagem.jpeg")));
 
         this.pack();
         this.setLocationRelativeTo(null);
@@ -54,13 +55,13 @@ public class Whatsapp extends JFrame {
             UserPanel userPanel = new UserPanel();
             userPanel.setAvatar(avatarImage);
             userPanel.setNickname(String.format("Usuário %d", i));
-            userPanel.setLastMessage(String.format("%s mensagem", i));
+            userPanel.setLastMessage(String.format("mensagem %s", i));
+            userPanel.setMessageTime("15:50");
             userList.add(userPanel);
         }
         panel.add(userList, BorderLayout.WEST);
 
         JPanel mainPanel = new WhitePanel(new BorderLayout());
-
 
 //        topPanel.add(userInfoPanel, BorderLayout.WEST);
 
